@@ -1,6 +1,5 @@
 # TextProcessor
- Assumptions/decisions
-
+Simple Anagram text processor
 1. Implemented  text stream classes(FileStream and InputStream) to handle and parse file and stdin texts respectively.
    Text is read line by line(avoid loading entire file or text into memory at once)
 
@@ -44,12 +43,12 @@
      TextProcessor::Processor.new(new NewContextClass.new())
 
 5. To run 
-   5.1 chmod +x solution.rb 
+   5.1 chmod +x app.rb 
 
-   5.2  The solution can be executed  in the following ways below:
-        ./solution.rb texts/0 text/4
-        cat texts/0  texts/1 | ./solution.rb
-        cat texts/0  texts/1 | ./solution.rb texts/0 text/4
+   5.2  The app.rb can be executed  in the following ways below:
+        ./app.rb texts/0 text/4
+        cat texts/0  texts/1 | ./app.rb
+        cat texts/0  texts/1 | ./app.rb texts/0 text/4
 
    5.3 test cases
        run rspec  
