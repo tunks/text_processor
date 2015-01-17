@@ -1,5 +1,6 @@
 # TextProcessor
 Simple Anagram text processor
+
 1. Implemented  text stream classes(FileStream and InputStream) to handle and parse file and stdin texts respectively.
    Text is read line by line(avoid loading entire file or text into memory at once)
 
