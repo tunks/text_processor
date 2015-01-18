@@ -25,26 +25,5 @@ module TextProcessor
              puts "Failed to run the text processor #{e.message}"
           end
       end
-    end
+   end
 end
-
- class Anagram
-     def initialize(input_array = [])
-        @output = {}
-        @input_array = input_array
-     end
-     
-     def process(input_array = @input_array)
-         input_array.each do |text| 
-             next if text.nil? or text.empty?
-             key = text.downcase.chars.sort.join
-             @output[key] = [] if @output[key].nil?
-             @output[key] << text 
-         end
-     end
-     
-     def generate
-         @output.values
-     end
-end
- 
