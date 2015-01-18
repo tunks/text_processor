@@ -1,5 +1,15 @@
 # TextProcessor
-Simple Anagram text processor
+
+Simple anagram text processor
+
+Description:
+
+This simple program accepts arguments a list of one or more file paths (e.g. `./app.rb file1.txt file2.txt ...`).
+and accepts input on stdin (e.g. `cat file1.txt | ./app.rb`).
+The program outputs a list of the 100 most common three word sequences in the text, along with a count of how many times each occurred in the text and  ignores punctuation, line endings, and is case insensitive (e.g. "I love\nsandwiches." should be treated the same as "(I LOVE SANDWICHES!!)"). 
+It is also capable of processing large files and runs as fast as possible.
+
+Implementation:
 
 1. Implemented  text stream classes(FileStream and InputStream) to handle and parse file and stdin texts respectively.
    Text is read line by line(avoid loading entire file or text into memory at once)
